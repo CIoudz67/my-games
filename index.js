@@ -75,6 +75,7 @@
     <link rel="stylesheet" crossorigin href="/assets/index-DiPW5G92.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
+
   </body>
 </html>
