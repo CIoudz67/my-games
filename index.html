@@ -318,7 +318,7 @@ function toggleFs(p) {
 GAMES.filter(g => g.href).forEach(g => {
   const p = document.createElement('section');
   p.className = 'gamebox'; p.id = 'page-' + g.id; p.hidden = true; p.setAttribute('aria-label', g.title);
-  p.innerHTML = '<div class="gstage">' + (g.play ? '' : '<p class="gnote">The game will appear here.</p><iframe title="' + g.title + ' game" allowfullscreen></iframe>') + '</div>' +
+  p.innerHTML = '<div class="gstage">' + (g.play ? '' : '<p class="gnote">The game will appear here.</p><iframe src="eaglercraft1-12-wasm.html" title="' + g.title + ' game" allowfullscreen></iframe>') + '</div>' +
     '<div class="gbar"><span class="gname">' + g.title + '</span><span class="gscore"></span><button class="gfs" aria-label="Fullscreen">' + FS_ICON + '</button></div><button class="gx" aria-label="Exit fullscreen">' + X_ICON + '</button>';
   $('#pages').append(p);
   const f = p.querySelector('iframe'); if (f && g.src) f.dataset.src = g.src;
